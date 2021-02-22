@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entity\Foo.cs" />
+    <Compile Remove="Entity\FooCompositeKey.cs" />
+    <Compile Remove="Entity\FooRelationshipA.cs" />
+    <Compile Remove="Entity\FooRelationshipB.cs" />
+    <Compile Remove="Entity\FooSelf.cs" />
+    <Compile Remove="Entity\FooStep.cs" />
+    <Compile Remove="Entity\Stadion.cs" />
+    <Compile Remove="Entity\Team.cs" />
+    <Compile Remove="Program.cs" />
+    <Compile Remove="SqliteDbUtil.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NHibernate" Version="5.3.5" />
+    <PackageReference Include="SQLite.CodeFirst" Version="1.6.1.31" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.113.7" />
+  </ItemGroup>
+
+</Project>
